@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["style.css"],"sourcesContent":["#title\r\n{\r\n    padding: 20px;\r\n    border: 2px solid red;\r\n    color: #fff;\r\n    background-color: rgb(219, 39, 39);\r\n}"],"names":[],"version":3,"file":"index.3a01df49.css.map","sourceRoot":"/__parcel_source_root/"}

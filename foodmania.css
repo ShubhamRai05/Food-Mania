@@ -1,0 +1,49 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    color: rgb(52, 56, 56);
+}
+.header .title
+{
+    margin: 10px 20px;
+}
+.nav-items ul{
+    display: flex;
+    list-style: none;
+}
+
+ul>li
+{
+    margin: 20px 20px;
+    font-weight: 900;
+
+}
+
+.card 
+{
+    width: 200px;
+    border: 1px solid black;
+    margin: 25px;
+    text-align: center;
+}
+
+.card img
+{
+    width: 100%;
+}
+.restaurant-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+}
