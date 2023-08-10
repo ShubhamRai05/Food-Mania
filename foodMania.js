@@ -40,7 +40,7 @@ const RestrauntCard = function () {
         <div className="card">
             <img src={burgerKing.img}></img>
             <h3>{burgerKing.name}</h3>
-            <h4>{burgerKing.cusines.join(", ")}</h4>
+            <h4>{burgerKing.cusines.join(" ,")}</h4>
             <p> {burgerKing.ratings} stars</p>
 
         </div>
@@ -50,10 +50,6 @@ const RestrauntCard = function () {
 const Body = function () {
     return (
         <div className="restaurant-cards">
-        <RestrauntCard/>            
-        <RestrauntCard/>            
-        <RestrauntCard/>            
-        <RestrauntCard/>            
         <RestrauntCard/>            
         <RestrauntCard/>            
         <RestrauntCard/>            
