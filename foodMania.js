@@ -2328,6 +2328,7 @@ const burgerKing = {
 }
 
 const RestrauntCard = function ({ name, cuisines, areaName, costForTwo, cloudinaryImageId }) {
+    // const { name, cuisines, areaName, costForTwo, cloudinaryImageId } = props //another way of destructuring but write props in function
 
     let imageURL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"
     // const  = restaurant.info
@@ -2351,8 +2352,8 @@ const Body = function () {
                     return <RestrauntCard {...restaurant.info} key={restaurant.info.id} />
                 })
             }
- 
-            {/* we cannot use foreach because it doesnt returns a new array */} 
+
+            {/* we cannot use foreach because it doesnt returns a new array */}
 
             {/* {/* <RestrauntCard restaurant={...restaurantList[5]} /> */}
             {/* <RestrauntCard restaurant={...restaurantList[6]} />
