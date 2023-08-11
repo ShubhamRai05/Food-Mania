@@ -32,10 +32,14 @@ ul>li
 
 .card 
 {
-    width: 200px;
+    width:220px;
     border: 1px solid black;
     margin: 25px;
     text-align: center;
+    font-size:1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 5px;
 }
 
 .card img
@@ -45,5 +49,5 @@ ul>li
 .restaurant-cards
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }

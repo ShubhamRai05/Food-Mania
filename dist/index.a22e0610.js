@@ -4777,9 +4777,9 @@ const burgerKing = {
     ],
     ratings: "4.2"
 };
-const RestrauntCard = function({ restaurant }) {
+const RestrauntCard = function({ name, cuisines, areaName, costForTwo, cloudinaryImageId }) {
     let imageURL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
-    const { name, cuisines, areaName, costForTwo, cloudinaryImageId } = restaurant.info;
+    // const  = restaurant.info
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card",
         children: [
@@ -4787,21 +4787,21 @@ const RestrauntCard = function({ restaurant }) {
                 src: imageURL + cloudinaryImageId
             }, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1603,
+                lineNumber: 1601,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: name
             }, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1604,
+                lineNumber: 1602,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: cuisines[0]
+                children: cuisines
             }, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1605,
+                lineNumber: 1603,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -4812,20 +4812,20 @@ const RestrauntCard = function({ restaurant }) {
                 ]
             }, void 0, true, {
                 fileName: "foodMania.js",
-                lineNumber: 1606,
+                lineNumber: 1604,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                 children: costForTwo
             }, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1607,
+                lineNumber: 1605,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "foodMania.js",
-        lineNumber: 1602,
+        lineNumber: 1600,
         columnNumber: 10
     }, this);
 };
@@ -4833,74 +4833,21 @@ _c1 = RestrauntCard;
 const Body = function() {
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "restaurant-cards",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[0]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1613,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[1]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1614,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[2]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1615,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[3]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1616,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[4]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1617,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[5]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1618,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[6]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1619,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[7]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1620,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestrauntCard, {
-                restaurant: restaurantList[8]
-            }, void 0, false, {
-                fileName: "foodMania.js",
-                lineNumber: 1621,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
+        children: restaurantList.map((restaurant)=>{
+            return /*#__PURE__*/ (0, _react.createElement)(RestrauntCard, {
+                ...restaurant.info,
+                key: restaurant.info.id,
+                __source: {
+                    fileName: "foodMania.js",
+                    lineNumber: 1612,
+                    columnNumber: 14
+                },
+                __self: this
+            });
+        })
+    }, void 0, false, {
         fileName: "foodMania.js",
-        lineNumber: 1612,
+        lineNumber: 1610,
         columnNumber: 10
     }, this);
 };
@@ -4912,12 +4859,12 @@ const Footer = function() {
             children: "FOOTER"
         }, void 0, false, {
             fileName: "foodMania.js",
-            lineNumber: 1627,
+            lineNumber: 1624,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "foodMania.js",
-        lineNumber: 1626,
+        lineNumber: 1623,
         columnNumber: 10
     }, this);
 };
@@ -4929,7 +4876,7 @@ const HeaderComponent = function() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                     fileName: "foodMania.js",
-                    lineNumber: 1633,
+                    lineNumber: 1630,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -4943,45 +4890,45 @@ const HeaderComponent = function() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1636,
+                                lineNumber: 1633,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "About Us"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1639,
+                                lineNumber: 1636,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1640,
+                                lineNumber: 1637,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "Careers"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1641,
+                                lineNumber: 1638,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "foodMania.js",
-                        lineNumber: 1635,
+                        lineNumber: 1632,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "foodMania.js",
-                    lineNumber: 1634,
+                    lineNumber: 1631,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "foodMania.js",
-            lineNumber: 1632,
+            lineNumber: 1629,
             columnNumber: 13
         }, this)
     }, void 0, false);
@@ -4992,17 +4939,17 @@ const AppLayout = function() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1649,
+                lineNumber: 1646,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1650,
+                lineNumber: 1647,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1651,
+                lineNumber: 1648,
                 columnNumber: 13
             }, this)
         ]
@@ -5013,7 +4960,7 @@ const rootJs = document.getElementById("root");
 const root = (0, _clientDefault.default).createRoot(rootJs);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "foodMania.js",
-    lineNumber: 1656,
+    lineNumber: 1653,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;
