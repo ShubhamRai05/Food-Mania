@@ -2351,6 +2351,8 @@ const Body = function () {
                     return <RestrauntCard {...restaurant.info} key={restaurant.info.id} />
                 })
             }
+ 
+            {/* we cannot use foreach because it doesnt returns a new array */} 
 
             {/* {/* <RestrauntCard restaurant={...restaurantList[5]} /> */}
             {/* <RestrauntCard restaurant={...restaurantList[6]} />

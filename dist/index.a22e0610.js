@@ -4859,12 +4859,12 @@ const Footer = function() {
             children: "FOOTER"
         }, void 0, false, {
             fileName: "foodMania.js",
-            lineNumber: 1624,
+            lineNumber: 1626,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "foodMania.js",
-        lineNumber: 1623,
+        lineNumber: 1625,
         columnNumber: 10
     }, this);
 };
@@ -4876,7 +4876,7 @@ const HeaderComponent = function() {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                     fileName: "foodMania.js",
-                    lineNumber: 1630,
+                    lineNumber: 1632,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -4890,45 +4890,45 @@ const HeaderComponent = function() {
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1633,
+                                lineNumber: 1635,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "About Us"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1636,
+                                lineNumber: 1638,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "Contact Us"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1637,
+                                lineNumber: 1639,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                                 children: "Careers"
                             }, void 0, false, {
                                 fileName: "foodMania.js",
-                                lineNumber: 1638,
+                                lineNumber: 1640,
                                 columnNumber: 25
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "foodMania.js",
-                        lineNumber: 1632,
+                        lineNumber: 1634,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "foodMania.js",
-                    lineNumber: 1631,
+                    lineNumber: 1633,
                     columnNumber: 17
                 }, this)
             ]
         }, void 0, true, {
             fileName: "foodMania.js",
-            lineNumber: 1629,
+            lineNumber: 1631,
             columnNumber: 13
         }, this)
     }, void 0, false);
@@ -4939,17 +4939,17 @@ const AppLayout = function() {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1646,
+                lineNumber: 1648,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1647,
+                lineNumber: 1649,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
                 fileName: "foodMania.js",
-                lineNumber: 1648,
+                lineNumber: 1650,
                 columnNumber: 13
             }, this)
         ]
@@ -4960,7 +4960,7 @@ const rootJs = document.getElementById("root");
 const root = (0, _clientDefault.default).createRoot(rootJs);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "foodMania.js",
-    lineNumber: 1653,
+    lineNumber: 1655,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3, _c4, _c5;
