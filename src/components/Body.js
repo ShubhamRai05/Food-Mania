@@ -1,17 +1,6 @@
 import {restaurantCardData} from "./config";
-import { CDN_URL } from "./config";
+import RestaurantCard from "./RestaurantCard";
 
-const RestaurantCard = function (props) {
-    const { name, cuisines, locality, cloudinaryImageId } = props
-    return (
-        <div className="cards">
-            <img src={CDN_URL + cloudinaryImageId} />
-            <h2>{name}</h2>
-            <p>{cuisines[0]}</p>
-            <h4>{locality}</h4>
-        </div>
-    )
-}
 
 const BodyComponent = function () {
     return (

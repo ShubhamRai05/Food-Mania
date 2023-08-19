@@ -30,3 +30,7 @@
 //     cuisines: ["American", "Indian"],
 //     location: "Andheri East"
 // }
+
+
+
+#All the hardcoded data will present in config/constant files
