@@ -2320,12 +2320,12 @@ const paddingStyle = {
 const Title = function () {
     return <h1 className="title ">Food Mania</h1>
 }
-const burgerKing = {
-    name: "Meraki",
-    img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf",
-    cusines: ["American", "cusine"],
-    ratings: "4.2"
-}
+// const burgerKing = {
+//     name: "Meraki",
+//     img: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf",
+//     cusines: ["American", "cusine"],
+//     ratings: "4.2"
+// }
 
 const RestrauntCard = function ({ name, cuisines, areaName, costForTwo, cloudinaryImageId }) {
     // const { name, cuisines, areaName, costForTwo, cloudinaryImageId } = props //another way of destructuring but write props in function
