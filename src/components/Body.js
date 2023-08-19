@@ -8,18 +8,6 @@ const BodyComponent = function () {
             {restaurantCardData.map((restro) => {
                 return <RestaurantCard {...restro.info} key={restro.info.id} />
             })}
-            {/* <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard />
-            <RestaurantCard /> */}
-
         </div>
     )
 }
