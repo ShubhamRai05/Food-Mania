@@ -15,22 +15,24 @@ const BodyComponent = function () {
 
 
             <button onClick={() => {
-            // if(searchButton === "true"){
-            //     setSearchButton("false")
-            // }
-            // else
-            // {
-            //     setSearchButton("true")
-            // }
+                // if(searchButton === "true"){
+                //     setSearchButton("false")
+                // }
+                // else
+                // {
+                //     setSearchButton("true")
+                // }
 
-            // above using ternary operator
+                // above using ternary operator
+                console.log(setSearchButton)
 
-            searchButton === "true" ? setSearchButton("false") : setSearchButton("true")
+                searchButton === "true" ? setSearchButton("false") : setSearchButton("true")
             }} value={searchButton}>Search</button>
 
             {/* two way data binding because it is reading and writing the value */}
             <h1>{searchButton}</h1>
             <h1>{searchText}</h1>
+            <h1>{setSearchButton}</h1>
 
 
             <div className="restaurant-list">
